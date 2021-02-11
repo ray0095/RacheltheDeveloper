@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <header>
+    <header id ="home">
         <h1>RacheltheDeveloper</h1> <!--Absolute to header --> 
 
         <nav> <!--fixed, high z, responsive on hover-->
             <ul>
                 <li>
-                    <a>home</a> <!--links to section below-->
+                    <a href="#home">home</a> <!--links to section below-->
                 </li>
                 <li>
-                    <a>about me</a>
+                    <a href="#bio">about me</a>
                 </li>
                 <li>
                     <a>my work</a>
@@ -31,14 +31,18 @@
     </header>
     
 
-    <main>
-        <section id="bio">
+    <main> <!--flexcontainer-->
+        <section id="bio"> <!--flex element-->
             <article> <!--Absolute to section-->
-            <h2>bio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, repellat omnis! Vitae ad dicta ea consequuntur error alias velit molestiae eveniet et magni quidem explicabo, omnis exercitationem reiciendis quas eius.</p>
+                <div>
+                    <div class="bio-content">
+                        <h2>bio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, repellat omnis! Vitae ad dicta ea consequuntur error alias velit molestiae eveniet et magni quidem explicabo, omnis exercitationem reiciendis quas eius.</p>
+                    </div>
+                        
+                    <img src="./assets/bio-photo.jpg" alt="Rachel's headshot photo"> <!--Absolute-->
+                </div>
             </article>
-
-            <img src="./assets/bio-photo.jpg" alt="Rachel's headshot photo"> <!--Absolute-->
         </section>
 
         <section id="my-work"> <!--flex grid-->
