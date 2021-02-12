@@ -11,6 +11,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--background);
@@ -51,6 +55,8 @@ header nav {
     right: 0px;
     top: 20px;
     z-index: 10;
+    border-radius: 50px 0 0 50px;
+    overflow: auto;
 }
 
 header nav ul {
