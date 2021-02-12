@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>RacheltheDeveloper</title>
+    <title>rachelTheDeveloper</title>
 </head>
 
 <body>
     <header id ="home">
-        <h1>RacheltheDeveloper</h1> <!--Absolute to header --> 
+        <h1>rachelTheDeveloper</h1> <!--Absolute to header --> 
 
         <nav> <!--fixed, high z, responsive on hover-->
             <ul>
@@ -31,19 +31,20 @@
     </header>
     
 
-    <main> <!--flexcontainer-->
-        <section id="bio"> <!--flex element-->
-            <article> <!--Absolute to section-->
-                <div>
-                    <div class="bio-content">
-                        <h2>bio</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, repellat omnis! Vitae ad dicta ea consequuntur error alias velit molestiae eveniet et magni quidem explicabo, omnis exercitationem reiciendis quas eius.</p>
-                    </div>
-                        
-                    <img src="./assets/bio-photo.jpg" alt="Rachel's headshot photo"> <!--Absolute-->
-                </div>
-            </article>
-        </section>
+    <main> 
+        <div class="flex-container" id="bio">
+            <a class="bio-kid">
+                <img src="./assets/bio-photo.jpg" alt="Rachel's headshot photo">
+            </a>
+
+            <div class="bio-kid">
+                <h2>bio</h2>
+                <p>
+                    I'm a New York City based developer who loves...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, repellat omnis! Vitae ad dicta ea consequuntur error alias velit molestiae eveniet et magni quidem explicabo, omnis exercitationem reiciendis quas eius.
+                </p>
+            </div>
+
+        </div>
 
         <section id="my-work"> <!--flex grid-->
             
