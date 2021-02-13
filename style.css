@@ -56,7 +56,6 @@ header nav {
     top: 20px;
     z-index: 10;
     border-radius: 50px 0 0 50px;
-    overflow: auto;
 }
 
 header nav ul {
@@ -77,13 +76,17 @@ h1:hover, h1:active {
     text-shadow: 1px 1px 10px var(--hovercolor);
 }
 
+h2:hover, h2:active {
+    text-shadow: 1px 1px 10px var(--hovercolor);
+}
+
 li:hover, li:active {
     text-shadow: 2px 2px 10px var(--hovercolor);
 }
 
+
 .flex-container {
     background-color: white;
-    padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -100,10 +103,6 @@ li:hover, li:active {
 
 .flex-container img {
     border-radius: 50px;
-}
-
-
-.flex-container img {
     border-radius: 50px;
     width: 300px;
     filter: drop-shadow(40px 60px 30px grey);
@@ -121,25 +120,66 @@ li:hover, li:active {
     height: 900px;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     margin: 60px;
-    align-items: center;
 }
 
 .cards div{
-    width: 200px;
-    padding: 40px; 
-    border: 1px white solid;  
+    flex-basis: 33%;
 }
 
-.card1 {
-    flex-basis:400px;
+.cards img {
+    width: 200px
+}
+
+.card1:hover {
+        height: 210px;
+        width: 210px;
+}
+
+.card2:hover {
+    height: 210px;
+    width: 210px;
+}
+
+.card3:hover {
+    height: 210px;
+        width: 210px;
+}
+
+#contact {
+    height: 900px;
+    background-color: var(--evenbackground);
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 20px;
+}
+
+#contact div {
+    background-color: var(--background);
+    padding: 50px;
+    border-radius: 50px;
+    height: 600px;
+    filter: drop-shadow(40px 60px 30px grey);
+   
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
 }
 
 
  @media (min-width:768px) {
-    header, .flex-container, .cards {
+    header, .flex-container, .cards, #contact {
         height: 1040px ;
     }
 
@@ -150,11 +190,20 @@ li:hover, li:active {
         .flex-container img {
             width: 400px;
         }
+
+        #contact div {
+            height: 800px;
+            font-size: x-large;
+            width: 600px;
+            align-items: center;
+        }
+
      }
 
 
 @media (min-width:1040px) {
-    header, .flex-container, .cards {
+
+    header, .flex-container, .cards, #contact {
         height: 1040px ;
     }
 
@@ -173,6 +222,26 @@ li:hover, li:active {
 
     .flex-container img {
         width: 600px;
+    }
+
+    
+    .cards img {
+        width: 400px
+    }
+
+    .card1:hover {
+        height: 610px;
+        width: 410px;
+}
+
+    .card2:hover {
+        height: 610px;
+        width: 410px;
+    }
+    
+    .card3:hover {
+        height: 610px;
+        width: 410px;
     }
     
 } 
