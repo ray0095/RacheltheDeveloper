@@ -1,5 +1,8 @@
 # My Developer Portfolio Site
 
+## Link to deployed site:
+https://ray0095.github.io/RacheltheDeveloper/
+
 ## Description 
 The following files contain the necessary assets to deploy a functional website for a developer/or anyone's portfolio website. The site ncludes linked menu items to anchor tags, a responsive layout using tools like Flexbox, and minor tranisitional and animation styles. Images have all been tagged with alternative text or other methods to ensure site accessibility. 
 
