@@ -12,9 +12,9 @@
 
 <body>
     <header id ="home">
-        <h1>rachelTheDeveloper</h1> <!--Absolute to header --> 
+        <h1>rachelTheDeveloper</h1> <!--Header for site--> 
 
-        <nav> <!--fixed, high z, responsive on hover-->
+        <nav> <!--Navigation menue and hamburger menu-->
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
@@ -39,12 +39,12 @@
     
 
     <main> 
-        <div class="flex-container" id="bio">
+        <div class="flex-container" id="bio"><!--begin bio section-->
             <div class="bio-kid">
-                <img src="./assets/bio-photo.jpg" alt="Rachel's headshot photo">
+                <img src="./assets/bio-photo.jpg" alt="Rachel's headshot photo"><!--profile photo-->
             </div>
 
-            <div class="bio-kid">
+            <div class="bio-kid"><!--bio paragraph-->
                 <h2>bio</h2>
                 <p>
                     I'm a New York City based professional who is still learning the ropes. I've been learning how to build websites with HTML, CSS, and Javascript.
@@ -57,12 +57,12 @@
 
         </div>
 
-        <section id="my-work"> 
+        <section id="my-work"> <!--begin my work section-->
             
-            <h2>my work</h2> <!--Absolute-->
-                <article class="work">
+            <h2>my work</h2> 
+                <article class="work"><!--flex container-->
     
-                    <div class="card1">
+                    <div class="card1"><!--make larger than rest-->
                         <a href="https://github.com/ray0095" target="_blank">
                         <img src="assets/startup.png" alt="app concept">
                         </a>
@@ -87,10 +87,10 @@
 
         </section>
 
-        <section id="contact">
+        <section id="contact"><!--begin contact section-->
             <div>
                 <h2>contact me</h2>
-                <form action="assets/form.html">
+                <form action="assets/form.html"><!--contact form-->
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname" value="John"><br>
                     <label for="lname">Last name:</label><br>
@@ -106,16 +106,16 @@
 
     </main>
 
-    <footer>
+    <footer><!--footer-->
         <a href="https://github.com/ray0095" target="_blank">
-        <h4>Github</h4>
+        <i class="fab fa-github"></i>
         </a>
         <h4>Made with &#10084 and CSS</h4>
         <a href="https://www.linkedin.com/in/rachel-strong-54276a142/" target="_blank">
-        <h4>Linkedin</h4>
+        <i class="fab fa-linkedin"></i>
         </a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script><!--JS link for hamburger menu-->
 </body>
 </html>

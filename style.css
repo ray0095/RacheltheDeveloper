@@ -1,4 +1,4 @@
-:root{
+:root{ /*Variables defined for site colors*/
     --background: black;
     --hovercolor:white;
     --maintext:#c377e0;
@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-html {
+html { /*Adds smooth scroll when clicking menu items*/
     scroll-behavior: smooth;
 }
 
@@ -21,7 +21,7 @@ body {
     color: var(--maintext);
 }
 
-a {
+a {/*Removes default link styling*/
     text-decoration: none;
     color: var(--maintext)
 }
@@ -31,13 +31,13 @@ p{
     margin-top: 2%;
 }
 
-ul {
+ul {/*Removes default link styling*/
     list-style-type: none;
     font-size: 100%;
 }
 
 header {
-    height: 825px;
+    height: 825px;/*Large heights to create "block" look*/
     position: relative;
     color: var(--maintext);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,7 +52,7 @@ header h1 {
     transform: translate(-50%, -50%);  
 }
 
-header nav {
+header nav { /*Navigation menu visible in desktop*/
     display: flex;
     align-items: center;
     justify-content:start;
@@ -70,11 +70,11 @@ header nav ul {
 
 header nav ul li {
     margin: 20px;
-    font-size: 15px;
+    font-size: 15px; 
     text-align: center;
 }
 
-.hamburger{
+.hamburger{ /*Hamburger menu styling*/
     background-color: transparent;
     color: var(--maintext);
     border: 0;
@@ -90,11 +90,11 @@ header nav ul li {
     display: none;
 }
 
-.nav-ul.show{
+.nav-ul.show{ /*When JS is activated on hamburger menu, navigation items appear*/
     display: flex;
 }
 
-h1:hover, h1:active {
+h1:hover, h1:active {/*Creates mouse hover effects*/
     text-shadow: 1px 1px 10px var(--hovercolor);
 }
 
@@ -107,7 +107,7 @@ li:hover, li:active {
 }
 
 
-.flex-container {
+.flex-container { /*flex container for Bio section*/
     background-color: white;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ li:hover, li:active {
     height: 900px;
 }
 
-.work {
+.work { /*flex container for portfolio display*/
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -155,7 +155,7 @@ li:hover, li:active {
     width: 200px;
 }
 
-img:hover, img:active {
+img:hover, img:active { /*adds box glow to images*/
        box-shadow: 1px 1px 10px var(--maintext);
     }
 
@@ -180,15 +180,15 @@ img:hover, img:active {
     padding: 50px;
     border-radius: 50px;
     height: 600px;
-    filter: drop-shadow(40px 60px 30px grey);
+    filter: drop-shadow(40px 60px 30px grey);/*adds shadow to form*/
    
 }
 
-#contact div:hover, #contact div:active {
+#contact div:hover, #contact div:active { /*adds box glow to form*/
     box-shadow: 1px 1px 10px var(--maintext);
  }
 
-footer {
+footer { /*flex box for footer*/
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -196,7 +196,7 @@ footer {
 }
 
 
- @media (min-width:768px) {
+ @media (min-width:768px) { /*begin styling for larger then mobile display*/
     header, .flex-container, .my-work, #contact {
         height: 1040px ;
     }
@@ -206,7 +206,7 @@ footer {
         margin-top: 15%;
     }
 
-    .nav-ul {
+    .nav-ul { /*display hidden menu*/
         display: flex;
     }
 
@@ -215,23 +215,19 @@ footer {
         font-size: 20px;
     }
 
-    .hamburger {
+    .hamburger {/*hide hamburger*/
         display: none;
     }
 
-    .hamburger:focus {
-        outline: none;
-    }
-
-    .flex-container{
+    .flex-container{ /*changes flex container for bio section to row*/
             flex-direction: row;
         }
 
-    .flex-container img {
+    .flex-container img {/*changes bio image size*/
             width: 400px;
         }
 
-    .work {
+    .work {/*changes flex direction of portfolio items*/
             display: flex;
             flex-direction: row;
             flex-wrap:wrap;
@@ -245,14 +241,14 @@ footer {
      
          
     #my-work .work .card1 img {
-             width: 400px;
+             width: 400px;/*changes changes first portfolio item to be larger than the rest*/
          }
      
     #my-work .work .card img {
              width: 200px;
          }
 
-    #contact div {
+    #contact div { /*enlarges form*/
             height: 800px;
             font-size: x-large;
             width: 600px;
@@ -262,9 +258,9 @@ footer {
      }
 
 
-@media (min-width:1040px) {
+@media (min-width:1040px) {/*begin styling for desktop view*/
 
-    header, .flex-container, #my-work, #contact {
+    header, .flex-container, #my-work, #contact { /*changes section size to fit desktop screen*/
         height: 1040px ;
     }
 
@@ -278,11 +274,11 @@ footer {
 
 
 
-    .flex-container img {
+    .flex-container img {/*changes bio pic to be larger*/
         width: 600px;
     }
 
-    #my-work .work .card1 img {
+    #my-work .work .card1 img {/*changes portfolio image to be larger*/
         width: 600px;
     }
 
@@ -290,16 +286,6 @@ footer {
         width: 300px;
     }
 
-
-    /* .card1:hover {
-        height: 610px;
-        width: 410px;
-}
-
-    .card:hover {
-        height: 610px;
-        width: 410px;
-    } */
     
 
     
