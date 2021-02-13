@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>rachelTheDeveloper</title>
     <link rel="shortcut icon" href="assets/robot.png">
+    <script src="https://kit.fontawesome.com/c9664a4343.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,7 +15,10 @@
         <h1>rachelTheDeveloper</h1> <!--Absolute to header --> 
 
         <nav> <!--fixed, high z, responsive on hover-->
-            <ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
                 <li>
                     <a href="#home">home</a> <!--links to section below-->
                 </li>
@@ -112,6 +116,6 @@
         </a>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>

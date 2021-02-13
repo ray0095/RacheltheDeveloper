@@ -53,15 +53,15 @@ header h1 {
 }
 
 header nav {
-    padding: 20px;
-    font-size: 15px;
-    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-wrap: wrap;
+    padding: 15px;
     position: fixed;
-    right: 0px;
-    top: 20px;
-    z-index: 10;
-    border-radius: 50px 0 0 50px;
-    overflow: auto;
+    z-index: 1;
+    background-color: var(--background);
+    margin-top: 15px;
 }
 
 header nav ul {
@@ -69,13 +69,29 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline-block;
     margin: 20px;
-    font-size: 20px;
+    font-size: 15px;
+    text-align: center;
 }
 
-header nav ul li a { /*Add a fallback style sheet*/
+.hamburger{
+    background-color: transparent;
     color: var(--maintext);
+    border: 0;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.nav-ul{
+    display: none;
+}
+
+.nav-ul.show{
+    display: flex;
 }
 
 h1:hover, h1:active {
@@ -190,16 +206,21 @@ footer {
         margin-top: 15%;
     }
 
-    header nav {
-        padding: 20px;
-        font-size: 15px;
-        background-color: var(--background);
-        position: fixed;
-        right: 0px;
-        top: 20px;
-        z-index: 10;
-        border-radius: 50px 0 0 50px;
-        overflow: auto;
+    .nav-ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hamburger:focus {
+        outline: none;
     }
 
     .flex-container{
