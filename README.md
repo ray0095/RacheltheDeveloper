@@ -34,6 +34,6 @@ Menu items are linked to specific sections on the page. Text and images have hov
 
 # Screenshots
 
-![Screenshot of site](/assets/desktop.png)
+![Screenshot of site](assets/desktop.png)
 
-![Screenshot of site](/assets/mobile.png)
+![Screenshot of site](assets/mobile.png)
