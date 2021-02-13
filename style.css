@@ -26,6 +26,11 @@ a {
     color: var(--maintext)
 }
 
+p{
+    line-height: 1em;
+    margin-top: 2%;
+}
+
 ul {
     list-style-type: none;
     font-size: 100%;
@@ -48,7 +53,7 @@ header h1 {
 }
 
 header nav {
-    padding-top: 10px;
+    padding: 20px;
     font-size: 15px;
     background-color: var(--background);
     position: fixed;
@@ -56,6 +61,7 @@ header nav {
     top: 20px;
     z-index: 10;
     border-radius: 50px 0 0 50px;
+    overflow: auto;
 }
 
 header nav ul {
@@ -114,39 +120,29 @@ li:hover, li:active {
     overflow: auto;
 }
 
-.cards{
+#my-work{
     background-color: var(--background);
     padding: 20px;
     height: 900px;
+}
+
+.work {
     display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 60px;
+    padding-top: 20px;
 }
 
-.cards div{
-    flex-basis: 33%;
+#my-work .work img {
+    width: 200px;
 }
 
-.cards img {
-    width: 200px
-}
+img:hover, img:active {
+       box-shadow: 1px 1px 10px var(--maintext);
+    }
 
-.card1:hover {
-        height: 210px;
-        width: 210px;
-}
-
-.card2:hover {
-    height: 210px;
-    width: 210px;
-}
-
-.card3:hover {
-    height: 210px;
-        width: 210px;
-}
 
 #contact {
     height: 900px;
@@ -172,26 +168,70 @@ li:hover, li:active {
    
 }
 
+#contact div:hover, #contact div:active {
+    box-shadow: 1px 1px 10px var(--maintext);
+ }
+
 footer {
+    display: flex;
     text-align: center;
+    justify-content: space-evenly;
     padding: 40px;
 }
 
 
  @media (min-width:768px) {
-    header, .flex-container, .cards, #contact {
+    header, .flex-container, .my-work, #contact {
         height: 1040px ;
     }
 
-        .flex-container{
+    p{
+        line-height: 1em;
+        margin-top: 15%;
+    }
+
+    header nav {
+        padding: 20px;
+        font-size: 15px;
+        background-color: var(--background);
+        position: fixed;
+        right: 0px;
+        top: 20px;
+        z-index: 10;
+        border-radius: 50px 0 0 50px;
+        overflow: auto;
+    }
+
+    .flex-container{
             flex-direction: row;
         }
 
-        .flex-container img {
+    .flex-container img {
             width: 400px;
         }
 
-        #contact div {
+    .work {
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+    .work div {
+            padding:1em;
+        }
+     
+         
+    #my-work .work .card1 img {
+             width: 400px;
+         }
+     
+    #my-work .work .card img {
+             width: 200px;
+         }
+
+    #contact div {
             height: 800px;
             font-size: x-large;
             width: 600px;
@@ -203,7 +243,7 @@ footer {
 
 @media (min-width:1040px) {
 
-    header, .flex-container, .cards, #contact {
+    header, .flex-container, #my-work, #contact {
         height: 1040px ;
     }
 
@@ -215,33 +255,31 @@ footer {
         font-size: x-large;
     }
 
-    .cards{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+
 
     .flex-container img {
         width: 600px;
     }
 
-    
-    .cards img {
-        width: 400px
+    #my-work .work .card1 img {
+        width: 600px;
     }
 
-    .card1:hover {
+    #my-work .work .card img {
+        width: 300px;
+    }
+
+
+    /* .card1:hover {
         height: 610px;
         width: 410px;
 }
 
-    .card2:hover {
+    .card:hover {
         height: 610px;
         width: 410px;
-    }
+    } */
     
-    .card3:hover {
-        height: 610px;
-        width: 410px;
-    }
+
     
 } 
