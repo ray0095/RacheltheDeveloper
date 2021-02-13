@@ -272,8 +272,6 @@ footer { /*flex box for footer*/
         font-size: x-large;
     }
 
-
-
     .flex-container img {/*changes bio pic to be larger*/
         width: 600px;
     }
@@ -284,6 +282,10 @@ footer { /*flex box for footer*/
 
     #my-work .work .card img {
         width: 300px;
+    }
+
+    footer .fab { /*makes footer icons larger*/
+        font-size: 40px;
     }
 
     
