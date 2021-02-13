@@ -66,6 +66,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin: 20px;
+    font-size: 20px;
 }
 
 header nav ul li a { /*Add a fallback style sheet*/
@@ -84,16 +85,16 @@ li:hover, li:active {
     background-color: white;
     padding: 20px;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content:center;
-    height: 900px;
     align-items: center;
     overflow: auto;
 }
 
 .flex-container .bio-kid {
     flex-basis: 300px;
-    margin: 20px;
+    margin-left: 20px;
     padding: 20px;
 }
 
@@ -101,9 +102,11 @@ li:hover, li:active {
     border-radius: 50px;
 }
 
-img {
+
+.flex-container img {
+    border-radius: 50px;
     width: 300px;
-    filter: drop-shadow(60px 60px 30px grey);
+    filter: drop-shadow(40px 60px 30px grey);
 }
 
 #my-work h2 {
@@ -115,29 +118,42 @@ img {
 .cards{
     background-color: var(--background);
     padding: 20px;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:space-around;
     height: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 60px;
     align-items: center;
 }
 
-.cards .project-card{
-    padding: 40px;
-    background-color: white;
-   
+.cards div{
+    width: 200px;
+    padding: 40px; 
+    border: 1px white solid;  
+}
+
+.card1 {
+    flex-basis:400px;
 }
 
 
-
-@media (min-width:768px) {
+ @media (min-width:768px) {
     header, .flex-container, .cards {
         height: 1040px ;
     }
-}
 
-@media (min-width:1024px) {
+        .flex-container{
+            flex-direction: row;
+        }
+
+        .flex-container img {
+            width: 400px;
+        }
+     }
+
+
+@media (min-width:1040px) {
     header, .flex-container, .cards {
         height: 1040px ;
     }
@@ -150,8 +166,13 @@ img {
         font-size: x-large;
     }
 
+    .cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .flex-container img {
         width: 600px;
     }
     
-}
+} 
