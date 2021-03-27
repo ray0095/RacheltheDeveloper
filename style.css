@@ -141,7 +141,13 @@ li:hover, li:active {
     padding: 20px;
     height: 900px;
 }
+.card {
+    padding: 1rem;
+}
 
+h4 {
+    padding: 1rem;
+}
 .work { /*flex container for portfolio display*/
     display: flex;
     flex-direction: column;
@@ -153,6 +159,7 @@ li:hover, li:active {
 
 #my-work .work img {
     width: 200px;
+    padding: 1rem;
 }
 
 img:hover, img:active { /*adds box glow to images*/
