@@ -139,7 +139,7 @@ li:hover, li:active {
 #my-work{
     background-color: var(--background);
     padding: 20px;
-    height: 900px;
+    height: 1400px;
 }
 .card {
     padding: 1rem;
@@ -205,7 +205,7 @@ footer { /*flex box for footer*/
 
  @media (min-width:768px) { /*begin styling for larger then mobile display*/
     header, .flex-container, .my-work, #contact {
-        height: 1040px ;
+        height: 2000px ;
     }
 
     p{
@@ -268,7 +268,7 @@ footer { /*flex box for footer*/
 @media (min-width:1040px) {/*begin styling for desktop view*/
 
     header, .flex-container, #my-work, #contact { /*changes section size to fit desktop screen*/
-        height: 1040px ;
+        height: 1500px ;
     }
 
     h1 {
